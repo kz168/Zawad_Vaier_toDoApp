@@ -1,0 +1,17 @@
+{
+  "name": "todoapp",
+  "description": "first app",
+  "main": "app.js",
+  "authors": [
+    "zawad <kzarefin2@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/kz168/Zawad_Vaier_toDoApp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
