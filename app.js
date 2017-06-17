@@ -27,9 +27,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Routing setup
 var index = require('./routes/index.js');
 var users = require('./routes/users.js');
+var view = require('./routes/view.js');
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/view',view);
 
 
 // catch 404 and forward to error handler
