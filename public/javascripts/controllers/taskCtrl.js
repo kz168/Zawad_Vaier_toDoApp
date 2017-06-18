@@ -7,8 +7,8 @@
 	* Description
 	*/
 	angular.module('App')
-	.controller('loginCtrl', ['$scope', function($scope){
-		console.log("I am in login ctrl");
+	.controller('taskCtrl', ['$scope', function($scope){
+		console.log("I am in task ctrl");
 
 	}]);
 })();

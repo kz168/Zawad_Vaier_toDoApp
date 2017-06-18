@@ -23,7 +23,36 @@
 						]})
 				}]
 			}
-		});
+		})
+
+		.when('/task', {
+			templateUrl: serverRequestAddr.devServerAdd + '/view/task', // sends request to server for html page
+			controller: 'taskCtrl',
+			resolve: {
+				loadAsset: ['$ocLazyLoad', function($ocLazyLoad) {
+					return $ocLazyLoad.load({
+						files : [
+						serverRequestAddr.devServerAdd + '/javascripts/controllers/taskCtrl.js',
+						]})
+				}]
+			}
+		})
+
+			.when('/addtask', {
+			templateUrl: serverRequestAddr.devServerAdd + '/view/addtask', // sends request to server for html page
+			controller: 'addtaskCtrl',
+			resolve: {
+				loadAsset: ['$ocLazyLoad', function($ocLazyLoad) {
+					return $ocLazyLoad.load({
+						files : [
+						serverRequestAddr.devServerAdd + '/javascripts/controllers/addtaskCtrl.js',
+						]})
+				}]
+			}
+		})
+
+		.otherwise('/');
+		$locationProvider.hashPrefix('');
      
 
 	}]);
