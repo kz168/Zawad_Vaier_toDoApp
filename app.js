@@ -23,6 +23,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//Connecting with mongoDB
+var mongoose = require("mongoose");
+
+mongoose.connect("mongodb://localhost:27017/toDoApp",function(){
+	console.log("mongoose successfully connected to mongodb://localhost:27017/toDoApp");
+});
+
+
 
 //Routing setup
 var index = require('./routes/index.js');
