@@ -7,11 +7,11 @@ form#demo-form.white-popup-block.form-horizontal
     .form-group.mt-lg
      label.col-sm-3.control-label Title
      .col-sm-9
-       input.form-control(type='text', name='name',ng-model = 'task.title' ,placeholder='Type your task title...', required='')
+       input.form-control(type='text', name='name',ng-model = 'task.title' ,placeholder='Type your task title...', required='',style="color: #C0C0C0")
     .form-group
       label.col-sm-3.control-label Description
       .col-sm-9
-       textarea.form-control(rows='5',ng-model = 'task.description', placeholder='Type your task detail...', required='')
+       textarea.form-control(rows='5',ng-model = 'task.description', placeholder='Type your task detail...', required='',style="color: #C0C0C0")
     .row.mb-lg
      .col-sm-9.col-sm-offset-3
       button.btn.btn-primary(ng-click="taskAddSubmit()") Submit

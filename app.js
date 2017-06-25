@@ -36,10 +36,12 @@ mongoose.connect("mongodb://localhost:27017/toDoApp",function(){
 var index = require('./routes/index.js');
 var users = require('./routes/users.js');
 var view = require('./routes/view.js');
+var tasks = require('./routes/tasks.js');
 
 app.use('/', index);
 app.use('/users', users);
 app.use('/view',view);
+app.use('/add_task',tasks);
 
 
 // catch 404 and forward to error handler
