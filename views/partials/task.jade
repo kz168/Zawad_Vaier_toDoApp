@@ -9,8 +9,11 @@ section.call-to-action.with-borders.with-button-arrow.mb-xl
       |  And always will be
   .call-to-action-btn.mt-lg
    a.popup-with-form.btn.btn-primary(href='#/addtask') Add Task!
-
-.col-md-6
+.row
+ .heading.heading-border.heading-middle-border.heading-middle-border-center(ng-show='noData')
+  h1
+    strong| No Task Added 
+ .col-md-6(ng-repeat='task in taskList',ng-show="!noData")
     .featured-box.featured-box-primary.featured-box-text-left(style='height: 301px;')
       .box-content
         .row
@@ -28,3 +31,4 @@ section.call-to-action.with-borders.with-button-arrow.mb-xl
    
 
     //- span.arrow.hrb(style='top: -88px; left: -24px;')
+//-script(src='js/theme.init.js')

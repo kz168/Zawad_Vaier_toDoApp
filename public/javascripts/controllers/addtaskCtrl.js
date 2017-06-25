@@ -21,7 +21,7 @@
     	 }).then(function(response) {
     	 	if(response.data.success == true){
            console.log("Successfull in post");
-           	AlertServ.successAlert("Data was Saved Successfully!");
+           	AlertServ.successAlert("Task was Saved Successfully!");
        }
     	 
     	});
