@@ -2,7 +2,7 @@
 	'use strict';
 
 	/**
-	* login Controller
+	* task Controller
 	*
 	* Description
 	*/
@@ -21,13 +21,12 @@
 		}).then(function successCallback(response) {
 			console.log(response.data.data);
 			$scope.taskList = response.data.data;
-			
 			//$scope.task=$scope.taskList[0];
 			console.log($scope.taskList);
 			if($scope.taskList.length != 0){
 			$scope.noData = false;
-		}
-			console.log($scope.noData);
+		   }
+			
 		  
 		  }, function errorCallback(error) {
 		  	console.log(error);
@@ -35,9 +34,9 @@
 		    // or server returns response with an error status.
 		  });
 	};
-
+        
 	    $scope.getTaskList();
-
+       console.log($scope.noData);
 		/*$scope.task =task;
       console.log("This is Task "+$scope.task);*/
 	}]);

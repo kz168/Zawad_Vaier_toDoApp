@@ -46,6 +46,7 @@
 					return $ocLazyLoad.load({
 						files : [
 						serverRequestAddr.devServerAdd + '/javascripts/controllers/addtaskCtrl.js',
+						serverRequestAddr.devServerAdd + '/javascripts/services/alertService.js',
 						]})
 				}]
 			}
